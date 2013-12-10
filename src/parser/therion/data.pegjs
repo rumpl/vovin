@@ -43,13 +43,13 @@ line "line"
 keyword "keyword"
     = start:start_keyword end:end_keyword { return start + end; }
 
-start_keyword 
+start_keyword
     = parts:[A-za-z0-9_/]+ { return parts.join(""); }
 
 end_keyword
     = parts:[A-za-z0-9_\-/]* { return parts.join(""); }
 
-string 
+string
     = '"' str:characters '"' { return str; }
 
 characters

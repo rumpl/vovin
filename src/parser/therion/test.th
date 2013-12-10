@@ -2,25 +2,25 @@ encoding UTF-8
 
 input "This is a test"
 
-survey test 
+survey test
 
-	line
+    line
 
 endsurvey test
 
 survey test2 -namespace off
 
-	line
-	namespace on
+    line
+    namespace on
 
 endsurvey
 
 survey subsur
 
-	survey subsub
-		line
-	endsurvey
-	line
-	namespace on
+    survey subsub
+        line
+    endsurvey
+    line
+    namespace on
 
 endsurvey
